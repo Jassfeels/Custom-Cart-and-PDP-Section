@@ -1,0 +1,18 @@
+{% if product.metafields.custom.usp_1 %}
+<div class="usp-section page-width">
+   <h2> Demo USP Section</h2>
+  <h3>Why You’ll Love It</h3>
+  <p>{{ product.metafields.custom.usp_1 }}</p>
+</div>
+{% endif %}
+{% schema %}
+  {
+    "name": "USP Section",
+    "settings": [],
+  "presets": [
+    {
+    "name": "USP Section",
+    }
+  ]
+  }
+{% endschema %}

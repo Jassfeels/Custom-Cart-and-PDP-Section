@@ -1,0 +1,19 @@
+{% if product.tags contains 'clinical-grade' %}
+<div class="scientific-breakdown page-width">
+  <h2> Demo Scientific Breakdown Section</h2>
+  <h3>Clinical-Grade Formula</h3>
+  <p>Our products are developed with lab-tested active ingredients for visible results.</p>
+</div>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Scientific Breakdown",
+    "settings": [],
+  "presets": [
+    {
+     "name": "Scientific Breakdown",
+    }
+  ]
+  }
+{% endschema %}

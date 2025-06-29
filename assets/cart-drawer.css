@@ -1,0 +1,71 @@
+
+.cart-drawer {
+  position: fixed; right: 0; top: 0; width: 400px; height: 100%;
+  background: #fff; z-index: 9999; box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+  transform: translateX(100%); transition: 0.3s ease;
+  overflow-y: auto;
+}
+.cart-drawer.open { transform: translateX(0); }
+.cart-drawer-header {
+  padding: 16px; border-bottom: 1px solid #ddd; display: flex; justify-content: space-between;
+}
+.cart-drawer-body {
+  padding: 16px;
+}
+.progress { height: 8px; background: #eee; border-radius: 4px; margin-top: 10px; }
+.progress-bar { height: 8px; background: #4CAF50; width: 0%; border-radius: 4px; display: block !important}
+.qty-btn {
+  background: #ddd; border: none; padding: 2px 6px; margin: 0 4px; cursor: pointer;
+}
+.remove-item {
+  color: red; background: none; border: none; cursor: pointer; font-size: 12px;
+}
+ .progress-container {
+  margin: 16px 0;
+}
+
+.progress-text {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: 500;
+}
+
+.progress-bar-outer {
+  width: 100%;
+  height: 12px;
+  background-color: #eee;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.progress-bar-inner {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to right, #4CAF50 0%, #4CAF50 0%, #eee 0%, #eee 100%);
+  transition: background 0.3s ease;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+.progress-milestones {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #777;
+}
+
+.progress-milestones span.unlocked {
+  color: #4CAF50;
+  font-weight: bold;
+}
+/* --- to hide default popup */
+cart-notification {
+    display: none;
+}
